@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="exemplo.php" method="post">
+        <h3>Preencha seus dados</h3>
+        <input type="text" name="nome" size="20" maxlength="50" placeholder="Insira seu nome completo" required>
+        <br><br>
+        <input type="text" name="CPF" placeholder="Insira seu CPF" maxlength="11" required>
+        <br><br>
+        <input type="text" name="email" placeholder="Insira seu email" required>
+        <br><br>
+            <input type="radio" name="sexo" value="Masculino">Masculino
+            <input type="radio" name="sexo" value="Feminino">Feminino
+            <input type="radio" name="sexo" value="Outro">Outro
+        <br><br>
+        Data de nascimento <input type="date" name="aniversário"> 
+        <br>
+        <p>Selecione a bandeira do seu cartão de crédito:</p>
+        <input type="radio" name="cartao" checked>VISA
+        <input type="radio" name="cartao" checked>MASTERCARD
+        <br><br>
+        <input type="text" name="end" size="30" placeholder="Insira seu endereço"required>
+        <p>Escolha o horário de entrega:</p>
+        <input type="checkbox" name="horario">08h às 12h
+        <br>
+        <input type="checkbox" name="horario">13h às 16h
+        <br>
+        <input type="checkbox" name="horario">17h às 19h
+        <br><br>
+        <textarea name="ref" rows="1" cols="35" placeholder="Para mais referência, escreva aqui:"></textarea>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
